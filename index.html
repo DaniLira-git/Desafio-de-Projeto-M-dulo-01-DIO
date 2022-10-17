@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto-Módulo 01</title>
+</head>
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr>
+    <h2>Tópicos importantes do módulo 01</h2>
+    <ul>
+        <li> <a href="#História_do_computador">História do computador</a></li>
+        <li> <a href="#História_da_web">História da web</a></li>
+        <li> <a href="#Entendendo_comunicação_Client_Server">Entendendo comunicação Client X Server</a></li>
+        <li> <a href="#Linguagem_de_programação">Linguagem de programação</a></li>
+        <li> <a href="#Estrutura_básica_de_um_html">Estrutura básica de um html</a></li>
+        <li> <a href="#Para_saber_mais">Para saber mais</a></li>
+    </ul>
+    
+    <h2 id="História_do_computador">História do computador</h2>
+    <h3><i>Primeiros computadores:</i></h3>
+    <ol>
+        <li> <u>Primeira geração:</u>  Mark 1 (1944) / Colossus(1964) / ENIAC(1964)</li>
+        <li> <u>Segunda geração:</u> mudou de valvula para transistores  (1959 a 1965)</li>
+        <li> <u>Terceira geração:</u> Circuuito integrado: Transistor - Capacitores - Resistores (1965 a 1970)</li>
+        <li> <u>Quarta geração:</u> a partir de 1971 até hoje, começou a surgir os computadores pessoais</li>
+        <li> <u>Quinta geração:</u> Computadores quanticos, metaverso, inteligência artificial e bitcoins</li>
+    </ol>
+
+    
+    <h2 id="História_da_web">História da web</h2>
+    <h3><i>Como surgiu a internet:</i></h3>
+    <p>
+        -Primeiro sistema de comunicação foi o telegrafo com o  código morse em 1958.
+        <br>
+        -Na década de 1950 veio a Guerra fria e com ela a corrida espacial. 
+        <br>
+        -o ENIAC ficava nos Estados Unidos e era usado para fazer calculos balisticos. 
+        <br>
+        -Surgiu a Arpa (Agência de projeto de pequisa avançada) e depois virou DARPA (Defense advanced research projects agency)
+        Com a necessidae de se comunicar surgiu a Arpanet, sua primeira conexão estabelecida foi feita em 29/10/1969 entre a UCLA(University of california) e SRI(Stanford research institute), eles mandaram a palavra login mas só chegou lo. 
+        <br>
+        -A Arpanet foi evoluindo ganhando alguns pontos de coneão até que Vinton Cerf e Robert Kahn criaram o TCP/IP que foi crescendo até serem formadas micro redes, redes mais expecializads <br>
+        -A Arpa net era para pesquisas cientificas e militares, baaseado nela surgiu a Mil Net era exclusivamente militar, a NFSnet era outra sub net voltada para noticías.
+        <br>
+        -Em 1989, Tim Berners-lee viu a oportunidade de unir hipertexto com TCP/IP e criar a <abbr title=" World Wide Web">WWW</abbr> o primeiro navegador se chamava World Wide Web, em seguida veio o mosaic, netscaipe e assim por diante, em 06 de agosto de 1991 ele públicou a primeira página web que você consegue acessar <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" title="Primeira página web" target="_blank">Clicando aqui</a>
+    </p>
+
+    
+    <h2 id="Entendendo_comunicação_Client_Server">Entendendo comunicação Client X Servidor</h2>
+    <h3><i>Cliente</i></h3>
+    <p>
+        É quando você consome a informação de algum lugar, é o dispositivo que está consumindo a informação na internet
+        ex: Notbock se conecta na internet com o servidor.
+        O servidor, serve informações para os clientes.
+        Quando você tem um site e publica, você está hospedando o site no servidor, significa que você vai colocar o seu arquivo de internet no servidor.
+    </p>
+
+    <h3><i> servidor</i></h3>
+    <p>
+        Existem vários tipos de servidores: <br>
+        -<strong>Arquivos</strong> (Centraliza imagens, àudio, vídeos.. para outros terem acesso) <br>
+        -<strong>Segurança</strong> (Firewall)  <br>
+        -<strong>Streaming</strong> (Faz streaming de dados, muitas vezes de vídeo) <br>
+        -<strong>E-mail</strong>  (Armazena e gerencia E-mails) <br>
+        -<strong>Web</strong> (Servidor para internet, html, css, js ..) <br>
+
+        Um servidor pode ser um computador pequeno ou uma sala com vário computadores que são conhecidos como data center que serve vário clientes (Tipo os servidores do Google, Facebook...)
+    </p>
+
+   
+    <h2 id="Linguagem_de_programação">Linguagem de programação</h2>
+    <p> 
+        <u> <strong> Definição:</u> </strong> É uma linguagem escrita e formal que especifica um conjunto de intruções e regras usadas para gerar programas <i>(Software)</i>.
+    </p>
+
+    <a name="Estrutura_básica_de_um_html">
+    <h2><i>Estrutura básica de um html</i></h2>
+    <p>
+        O documento HTML sempre inicia com o que chamamos de <strong> estrutura básica</strong> <br>
+    </p>
+    <ol>
+        <li>Definição do documento (doctype)</li>
+        <li>Cabeça (head)</li>
+        <li>Corpo (body)</li>
+    </ol>
+    
+    <h3><mark>Doctype</mark> - Definindo o documento</h3>
+    <p>Uma coisa importante: SEMPRE deve existir o doctype, que é este código <code>&lt;!DOCTYPE html&gt;</code>.</p>
+    <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+  
+    <h3><mark>HEAD</mark></h3>
+    <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag <code>head</code>.</p>
+  
+    <h3><mark>BODY</mark></h3>
+    <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags <code>&lt;body&gt;</code> e <code>&lt;/body&gt;</code>.</p>
+    <p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.</p>
+    <p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc. </p>
+    <BLOckquote>Fonte https://tableless.github.io/iniciantes/manual/html/estruturabasica.html</BLOckquote>
+
+    <h2 id="Para_saber_mais">Para saber mais</h2>
+    <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">Exemplos de html básico-W3Schools</a> <br>
+    <a href="https://www.w3schools.com/tags/tag_a.asp">Tag a(ancora) de link-W3Schools</a> <br>
+    <a href="https://www.w3schools.com/html/default.asp">Tutoriais completos sobre html-W3Schools</a> <br>
+    <a href="https://www.alura.com.br/artigos/ancorando-elementos-com-html5">Ancorando elementos com HTML5-Alura</a> <br>
+    <a href="https://www.w3schools.com/tags/tag_abbr.asp">Tag abbr-W3Schools</a>
+
+
+</body>
+</html>
